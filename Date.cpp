@@ -57,7 +57,7 @@ int Date::get_day(){
             else{ return false;}
         }
         bool Date::operator>=(const Date& D)const{
-             if(_year=>D._year) return true;
+            if(_year>D._year) return true;
             if(_year == D._year && (_mon > D._mon || _mon == D._mon)) return true;
             if(_year == D._year && _mon == D._mon && (_day > D._day || _day == D._day)) {return true;}
             else{ return false;}
@@ -133,7 +133,7 @@ bool Date::bad()const{
         return false;
     }
 }
-
+/*
 std::istream& read(std::istream& istr, const Date& D){
         istr>>D._year;
         istr.ignore(1);
@@ -146,7 +146,7 @@ std::ostream& write(std::ostream& ostr, const Date& D){
     ostr<<D._year<<"/"<<D._mon<<"/"<<D._day<<endl;
 return ostr;
 }
-
+*/
  void operator<<( std::ostream&, Date D ){
         std::cout << D._year;
         std::cout << '/';
