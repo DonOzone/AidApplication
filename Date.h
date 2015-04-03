@@ -46,8 +46,8 @@ class Date
         void errCode(int errorCode); //sets the -readErrorCode member-variable to one of the values mentioned
 
 };
-std::istream& read(std::istream& istr, Date& D);
-std::ostream& write(std::ostream& ostr, const Date& D) ;
+//std::istream& read(std::istream& istr, Date& D);
+//std::ostream& write(std::ostream& ostr, const Date& D) ;
 
 
 #endif // DATE_H
